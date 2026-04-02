@@ -2,7 +2,7 @@
 
 A fast, responsive, and professional-grade Finance Management Portal. I built this for the **Zorvyn Frontend Developer Intern** assignment to help users track spending, visualize trends, and manage transactions.
 
-### 🔗 [Live Demo](https://zorvyn-sujay-dashboard.netlify.app/) | [GitHub Repository](https://github.com/sujay-707/zorvyn-finance-dashboard)
+### 🔗 [Live Demo](https://zorvyn-sujay-dashboard.netlify.app/) 
 
 ---
 
