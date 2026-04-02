@@ -69,14 +69,6 @@ A fast, responsive, and professional-grade Finance Management Portal. I built th
 
 ---
 
-## 🧠 The "Senior-Level" Approach
-
-* **Design:** I used a "Pure White" theme for clarity and high-contrast text for accessibility.
-* **Performance:** I used the **Context API** instead of Redux to keep the bundle size small and the logic clean.
-* **UX Details:** I focused on "Empty States" and "Sorting" to ensure the app feels like a finished product, not just a demo.
-
----
-
 ## 👤 Author
 
 **Sujay Mundaragi**
