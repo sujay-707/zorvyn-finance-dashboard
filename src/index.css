@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* --- Pure White Light Mode --- */
+  --bg-canvas: #ffffff;        /* Pure White */
+  --bg-card: #ffffff;          /* Pure White */
+  --text-main: #475569;        /* Slate 600 */
+  --text-heading: #0f172a;     /* Slate 900 */
+  --border-subtle: #f1f5f9;    /* Very Light Slate (for definition) */
+  --accent-primary: #2563eb;   /* Blue 600 */
+  
+  /* --- Typography --- */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  background-color: var(--bg-canvas);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Professional Dark Mode --- */
+.dark {
+  --bg-canvas: #020617;        /* Deep Slate 950 */
+  --bg-card: #0f172a;          /* Slate 900 */
+  --text-main: #94a3b8;        /* Slate 400 */
+  --text-heading: #f8fafc;     /* Slate 50 */
+  --border-subtle: #1e293b;    /* Slate 800 */
+  --accent-primary: #3b82f6;   /* Blue 500 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--bg-canvas);
+  color: var(--text-main);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@layer base {
+  /* This force-updates all 'bg-white' components when switching themes */
+  .bg-white {
+    background-color: var(--bg-card) !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .text-slate-800, .text-slate-900 {
+    color: var(--text-heading) !important;
+    transition: color 0.3s ease;
+  }
+
+  .border-gray-100, .border-gray-200, .border-slate-200 {
+    border-color: var(--border-subtle) !important;
+    transition: border-color 0.3s ease;
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--text-heading);
+    transition: color 0.3s ease;
+  }
+}
+
+/* --- Utilities --- */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Recharts Tooltip Theme Sync */
+.recharts-default-tooltip {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 12px !important;
+}
